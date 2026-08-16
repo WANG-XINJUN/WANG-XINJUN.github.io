@@ -16,7 +16,7 @@
         header {
             background: linear-gradient(135deg, #123b63, #246da5);
             color: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -87,7 +87,50 @@
             padding: 30px;
         }
 
+
+        /* =========================================
+           头像
+           外框固定 180px
+           图片在里面缩小显示
+           ========================================= */
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+
+            margin: 0 auto 20px auto;
+
+            border: 4px solid white;
+            border-radius: 50%;
+
+            background: #1f5b87;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+
+            box-sizing: border-box;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+        }
+
+        .profile-photo img {
+            width: 78%;
+            height: 78%;
+
+            display: block;
+
+            object-fit: cover;
+            object-position: center center;
+
+            border-radius: 50%;
+        }
+
+
         @media(max-width: 800px) {
+
             .research {
                 grid-template-columns: 1fr;
             }
@@ -95,24 +138,18 @@
             header h1 {
                 font-size: 36px;
             }
+
+            .profile-photo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .profile-photo img {
+                width: 78%;
+                height: 78%;
+            }
         }
-.profile-photo {
-    width: 180px;
-    height: 180px;
 
-    border-radius: 50%;
-    border: 4px solid white;
-
-    object-fit: contain;
-    object-position: center center;
-
-    background-color: #1f5b87;
-
-    display: block;
-    margin: 0 auto 20px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
-}
     </style>
 </head>
 
@@ -126,13 +163,19 @@
 </nav>
 
 <header>
-<div class="profile-photo">
-    <img src="wang.jpg" alt="Xinjun Wang">
-</div>
+
+    <div class="profile-photo">
+        <img src="wang.jpg" alt="Xinjun Wang">
+    </div>
+
     <h1>Xinjun Wang</h1>
+
     <p>Associate Professor</p>
+
     <p>Shandong Normal University</p>
+
     <p>Nonlinear Systems · Multi-Agent Systems · Secure Control</p>
+
 </header>
 
 <main>
@@ -153,6 +196,7 @@
         denial-of-service attacks and fault-tolerant control.
     </p>
 </section>
+
 
 <section>
     <h2>Research Interests</h2>
@@ -186,18 +230,27 @@
     </div>
 </section>
 
+
 <section>
     <h2>Education & Experience</h2>
 
-    <p><strong>2020 – Present</strong><br>
-    Associate Professor, Shandong Normal University</p>
+    <p>
+        <strong>2020 – Present</strong><br>
+        Associate Professor, Shandong Normal University
+    </p>
 
-    <p><strong>2022 – 2023</strong><br>
-    Visiting Scholar, Chongqing University</p>
+    <p>
+        <strong>2022 – 2023</strong><br>
+        Visiting Scholar, Chongqing University
+    </p>
 
-    <p><strong>2016 – 2020</strong><br>
-    Ph.D., Hohai University</p>
+    <p>
+        <strong>2016 – 2020</strong><br>
+        Ph.D., Hohai University
+    </p>
+
 </section>
+
 
 <section>
     <h2>Publications</h2>
@@ -215,12 +268,15 @@
             → View all publications
         </a>
     </p>
+
 </section>
+
 
 <section>
     <h2>Research Projects</h2>
 
     <ul>
+
         <li>
             High-Performance Event-Triggered Control for Nonlinear
             Networked Multi-Agent Systems
@@ -235,6 +291,7 @@
             Intelligent Security Control Theory of Networked Systems
             and Cooperative Application in Robots
         </li>
+
     </ul>
 
     <p>
@@ -242,17 +299,25 @@
             → View research projects
         </a>
     </p>
+
 </section>
+
 
 <section>
     <h2>Honors & Awards</h2>
 
     <ul>
+
         <li>Youth Science and Technology Award, 2026</li>
+
         <li>First Prize of Natural Science Award, 2025</li>
+
         <li>Excellent Doctoral Dissertation Award, 2021</li>
+
         <li>Merit Student of Jiangsu Province, 2020</li>
+
         <li>National Scholarship for Doctoral Students</li>
+
     </ul>
 
     <p>
@@ -260,14 +325,16 @@
             → View all awards
         </a>
     </p>
+
 </section>
+
 
 <section>
     <h2>Contact</h2>
 
     <p>
         <strong>Email:</strong>
-        <a href="mailto:wangxinjun1991@163.com">
+        <a href="mailto:wangxinjunsdnu@163.com">
             wangxinjunsdnu@163.com
         </a>
     </p>
@@ -276,9 +343,11 @@
         <strong>Affiliation:</strong>
         Shandong Normal University
     </p>
+
 </section>
 
 </main>
+
 
 <footer>
     © 2026 Xinjun Wang · Academic Homepage

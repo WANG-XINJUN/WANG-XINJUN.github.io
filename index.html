@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Xinjun Wang - Academic Homepage</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fa;
             color: #222;
+            line-height: 1.6;
         }
 
-        header {
-            background: linear-gradient(135deg, #123b63, #246da5);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0 0 15px;
-        }
-
-        header p {
-            font-size: 20px;
-            margin: 8px;
-        }
-
+        /* Navigation */
         nav {
             background: white;
-            padding: 18px;
+            padding: 18px 20px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
 
         nav a {
@@ -44,9 +34,48 @@
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #246da5;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #123b63, #246da5);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Profile photo */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+
+            border-radius: 50%;
+            border: none;
+
+            object-fit: cover;
+            object-position: center center;
+
+            display: block;
+            margin: 0 auto 25px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 8px;
+        }
+
+        /* Main content */
         main {
             max-width: 1100px;
-            margin: auto;
+            margin: 0 auto;
             padding: 50px 20px;
         }
 
@@ -55,15 +84,17 @@
             margin-bottom: 30px;
             padding: 35px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
         }
 
         h2 {
             color: #123b63;
             border-bottom: 3px solid #246da5;
             padding-bottom: 10px;
+            margin-top: 0;
         }
 
+        /* Research cards */
         .research {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -78,8 +109,24 @@
 
         .box h3 {
             color: #123b63;
+            margin-top: 0;
         }
 
+        /* Links */
+        a {
+            color: #246da5;
+        }
+
+        a:hover {
+            color: #123b63;
+        }
+
+        /* Lists */
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
         footer {
             background: #123b63;
             color: white;
@@ -87,74 +134,49 @@
             padding: 30px;
         }
 
-
-        /* =========================================
-           头像
-           外框固定 180px
-           图片在里面缩小显示
-           ========================================= */
-
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-
-            margin: 0 auto 20px auto;
-
-            border: 4px solid white;
-            border-radius: 50%;
-
-            background: #1f5b87;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            overflow: hidden;
-
-            box-sizing: border-box;
-
-            box-shadow: 0 4px 15px rgba(0,0,0,0.18);
-        }
-
-        .profile-photo img {
-            width: 78%;
-            height: 78%;
-
-            display: block;
-
-            object-fit: cover;
-            object-position: center center;
-
-            border-radius: 50%;
-        }
-
-
-        @media(max-width: 800px) {
+        /* Mobile */
+        @media (max-width: 800px) {
 
             .research {
                 grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 45px 15px;
             }
 
             header h1 {
                 font-size: 36px;
             }
 
-            .profile-photo {
-                width: 160px;
-                height: 160px;
+            header p {
+                font-size: 18px;
             }
 
-            .profile-photo img {
-                width: 78%;
-                height: 78%;
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            section {
+                padding: 25px;
             }
         }
-
     </style>
 </head>
 
 <body>
 
+<!-- Navigation -->
 <nav>
     <a href="index.html">Home</a>
     <a href="publications.html">Publications</a>
@@ -162,11 +184,15 @@
     <a href="awards.html">Awards</a>
 </nav>
 
+
+<!-- Header -->
 <header>
 
-    <div class="profile-photo">
-        <img src="wang1.jpg" alt="Xinjun Wang">
-    </div>
+    <img
+        src="wang.jpg"
+        alt="Xinjun Wang"
+        class="profile-photo"
+    >
 
     <h1>Xinjun Wang</h1>
 
@@ -174,183 +200,227 @@
 
     <p>Shandong Normal University</p>
 
-    <p>Nonlinear Systems · Multi-Agent Systems · Secure Control</p>
+    <p>
+        Nonlinear Systems · Multi-Agent Systems · Secure Control
+    </p>
 
 </header>
 
+
+<!-- Main -->
 <main>
 
-<section>
-    <h2>About Me</h2>
+    <!-- About Me -->
+    <section>
 
-    <p>
-        I am an Associate Professor at Shandong Normal University.
-        My research focuses on nonlinear control systems, multi-agent systems,
-        cyber-physical systems, adaptive control and resilient control under
-        cyber attacks.
-    </p>
+        <h2>About Me</h2>
 
-    <p>
-        My research interests include secure control of nonlinear systems,
-        distributed control, consensus tracking, deception attacks,
-        denial-of-service attacks and fault-tolerant control.
-    </p>
-</section>
+        <p>
+            I am an Associate Professor at Shandong Normal University.
+            My research focuses on nonlinear control systems, multi-agent systems,
+            cyber-physical systems, adaptive control and resilient control under
+            cyber attacks.
+        </p>
+
+        <p>
+            My research interests include secure control of nonlinear systems,
+            distributed control, consensus tracking, deception attacks,
+            denial-of-service attacks and fault-tolerant control.
+        </p>
+
+    </section>
 
 
-<section>
-    <h2>Research Interests</h2>
+    <!-- Research Interests -->
+    <section>
 
-    <div class="research">
+        <h2>Research Interests</h2>
 
-        <div class="box">
-            <h3>Nonlinear Control</h3>
-            <p>
-                Adaptive control, tracking control, stabilization,
-                finite-time control and prescribed-performance control.
-            </p>
+        <div class="research">
+
+            <div class="box">
+
+                <h3>Nonlinear Control</h3>
+
+                <p>
+                    Adaptive control, tracking control, stabilization,
+                    finite-time control and prescribed-performance control.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <h3>Multi-Agent Systems</h3>
+
+                <p>
+                    Distributed control, consensus tracking,
+                    bipartite consensus and networked coordination.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <h3>Secure Control</h3>
+
+                <p>
+                    Resilient control under deception attacks,
+                    DoS attacks, sensor attacks and actuator faults.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="box">
-            <h3>Multi-Agent Systems</h3>
-            <p>
-                Distributed control, consensus tracking,
-                bipartite consensus and networked coordination.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Secure Control</h3>
-            <p>
-                Resilient control under deception attacks,
-                DoS attacks, sensor attacks and actuator faults.
-            </p>
-        </div>
-
-    </div>
-</section>
+    </section>
 
 
-<section>
-    <h2>Education & Experience</h2>
+    <!-- Education & Experience -->
+    <section>
 
-    <p>
-        <strong>2020 – Present</strong><br>
-        Associate Professor, Shandong Normal University
-    </p>
+        <h2>Education &amp; Experience</h2>
 
-    <p>
-        <strong>2022 – 2023</strong><br>
-        Visiting Scholar, Chongqing University
-    </p>
+        <p>
+            <strong>2020 – Present</strong><br>
+            Associate Professor, Shandong Normal University
+        </p>
 
-    <p>
-        <strong>2016 – 2020</strong><br>
-        Ph.D., Hohai University
-    </p>
+        <p>
+            <strong>2022 – 2023</strong><br>
+            Visiting Scholar, Chongqing University
+        </p>
 
-</section>
+        <p>
+            <strong>2016 – 2020</strong><br>
+            Ph.D., Hohai University
+        </p>
 
-
-<section>
-    <h2>Publications</h2>
-
-    <p>
-        My research has resulted in journal publications in
-        Automatica, IEEE Transactions on Automatic Control,
-        IEEE Transactions on Cybernetics, IEEE Transactions on
-        Fuzzy Systems, IEEE Transactions on Control of Network Systems,
-        and other international journals.
-    </p>
-
-    <p>
-        <a href="publications.html">
-            → View all publications
-        </a>
-    </p>
-
-</section>
+    </section>
 
 
-<section>
-    <h2>Research Projects</h2>
+    <!-- Publications -->
+    <section>
 
-    <ul>
+        <h2>Publications</h2>
 
-        <li>
-            High-Performance Event-Triggered Control for Nonlinear
-            Networked Multi-Agent Systems
-        </li>
+        <p>
+            My research has resulted in journal publications in
+            Automatica, IEEE Transactions on Automatic Control,
+            IEEE Transactions on Cybernetics, IEEE Transactions on
+            Fuzzy Systems, IEEE Transactions on Control of Network Systems,
+            and other international journals.
+        </p>
 
-        <li>
-            Secure Control of Nonlinear Cyber-Physical Systems
-            with Partially Measurable State Information
-        </li>
+        <p>
+            <a href="publications.html">
+                → View all publications
+            </a>
+        </p>
 
-        <li>
-            Intelligent Security Control Theory of Networked Systems
-            and Cooperative Application in Robots
-        </li>
-
-    </ul>
-
-    <p>
-        <a href="projects.html">
-            → View research projects
-        </a>
-    </p>
-
-</section>
+    </section>
 
 
-<section>
-    <h2>Honors & Awards</h2>
+    <!-- Research Projects -->
+    <section>
 
-    <ul>
+        <h2>Research Projects</h2>
 
-        <li>Youth Science and Technology Award, 2026</li>
+        <ul>
 
-        <li>First Prize of Natural Science Award, 2025</li>
+            <li>
+                High-Performance Event-Triggered Control for Nonlinear
+                Networked Multi-Agent Systems
+            </li>
 
-        <li>Excellent Doctoral Dissertation Award, 2021</li>
+            <li>
+                Secure Control of Nonlinear Cyber-Physical Systems
+                with Partially Measurable State Information
+            </li>
 
-        <li>Merit Student of Jiangsu Province, 2020</li>
+            <li>
+                Intelligent Security Control Theory of Networked Systems
+                and Cooperative Application in Robots
+            </li>
 
-        <li>National Scholarship for Doctoral Students</li>
+        </ul>
 
-    </ul>
+        <p>
+            <a href="projects.html">
+                → View research projects
+            </a>
+        </p>
 
-    <p>
-        <a href="awards.html">
-            → View all awards
-        </a>
-    </p>
-
-</section>
+    </section>
 
 
-<section>
-    <h2>Contact</h2>
+    <!-- Honors & Awards -->
+    <section>
 
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:wangxinjunsdnu@163.com">
-            wangxinjunsdnu@163.com
-        </a>
-    </p>
+        <h2>Honors &amp; Awards</h2>
 
-    <p>
-        <strong>Affiliation:</strong>
-        Shandong Normal University
-    </p>
+        <ul>
 
-</section>
+            <li>
+                Youth Science and Technology Award, 2026
+            </li>
+
+            <li>
+                First Prize of Natural Science Award, 2025
+            </li>
+
+            <li>
+                Excellent Doctoral Dissertation Award, 2021
+            </li>
+
+            <li>
+                Merit Student of Jiangsu Province, 2020
+            </li>
+
+            <li>
+                National Scholarship for Doctoral Students
+            </li>
+
+        </ul>
+
+        <p>
+            <a href="awards.html">
+                → View all awards
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section>
+
+        <h2>Contact</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:wangxinjunsdnu@163.com">
+                wangxinjunsdnu@163.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Affiliation:</strong>
+            Shandong Normal University
+        </p>
+
+    </section>
 
 </main>
 
 
+<!-- Footer -->
 <footer>
+
     © 2026 Xinjun Wang · Academic Homepage
+
 </footer>
 
 </body>

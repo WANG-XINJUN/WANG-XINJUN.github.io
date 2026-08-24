@@ -9,206 +9,186 @@
 
 <title>Xinjun Wang | Academic Homepage</title>
 
-
 <style>
 
-body{
-    margin:0;
-    font-family:
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-    background:#ffffff;
-    color:#333;
-    line-height:1.7;
+html {
+    scroll-behavior: smooth;
 }
 
-
-header{
-
-    background:
-    linear-gradient(135deg,#123b63,#246da5);
-
-    color:white;
-
-    text-align:center;
-
-    padding:60px 20px;
-
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.7;
 }
 
+/* Header */
 
-.profile-photo{
-
-    width:160px;
-
-    height:160px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    margin-bottom:20px;
-
+header {
+    background: linear-gradient(135deg, #123b63, #246da5);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-
-
-h1{
-
-    font-size:42px;
-
-    margin:10px 0;
-
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto 20px;
 }
 
-
-
-.subtitle{
-
-    font-size:20px;
-
+h1 {
+    font-size: 42px;
+    margin: 10px 0;
 }
 
-
-
-nav{
-
-    text-align:center;
-
-    padding:18px;
-
-    border-bottom:1px solid #ddd;
-
+.subtitle {
+    font-size: 20px;
+    margin: 4px 0;
 }
 
+/* Navigation */
 
-
-nav a{
-
-    margin:0 15px;
-
-    text-decoration:none;
-
-    color:#123b63;
-
-    font-weight:bold;
-
+nav {
+    text-align: center;
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+    background: #ffffff;
 }
 
-
-
-.container{
-
-    max-width:1000px;
-
-    margin:auto;
-
-    padding:40px 20px;
-
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #123b63;
+    font-weight: bold;
 }
 
-
-
-section{
-
-    margin-bottom:45px;
-
+nav a:hover {
+    color: #246da5;
 }
 
+/* Main Content */
 
-
-h2{
-
-    color:#123b63;
-
-    border-bottom:2px solid #123b63;
-
-    padding-bottom:8px;
-
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    color: #123b63;
+    border-bottom: 2px solid #123b63;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Publications */
 
 .publication {
-    margin-bottom: 7px;
+    margin-bottom: 14px;
 }
 
 .publication p {
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.55;
+    text-align: left;
 }
 
+/* Lists */
 
-
-
-
-.project{
-
-    margin-bottom:20px;
-
-}
-
-
-
-.award{
-
-    margin-bottom:15px;
-
-}
 ul {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 25px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     line-height: 1.5;
+    text-align: left;
 }
 
-a{
+/* Projects */
 
-    color:#246da5;
-
+.projects {
+    padding-left: 25px;
 }
 
-
-
-footer{
-
-    background:#123b63;
-
-    color:white;
-
-    text-align:center;
-
-    padding:25px;
-
+.projects li {
+    margin-bottom: 12px;
 }
 
+/* Awards */
 
-
-@media(max-width:700px){
-
-.profile-photo{
-
-width:160px;
-
-height:160px;
-
+.awards-list {
+    padding-left: 25px;
 }
 
-
-h1{
-
-font-size:32px;
-
+.awards-list li {
+    margin-bottom: 12px;
 }
 
+/* Links */
 
+a {
+    color: #246da5;
 }
 
+/* Footer */
+
+footer {
+    background: #123b63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media(max-width: 700px) {
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 30px 18px;
+    }
+
+    .publication p {
+        line-height: 1.5;
+    }
+
+}
 
 </style>
-
 
 </head>
 
@@ -216,123 +196,86 @@ font-size:32px;
 <body>
 
 
+<!-- Header -->
+
 <header>
 
-
-<img src="wang3.jpg"
+<img
+src="wang3.jpg"
 class="profile-photo"
 alt="Xinjun Wang">
 
-
-<h1>
-Xinjun Wang
-</h1>
-
+<h1>Xinjun Wang</h1>
 
 <div class="subtitle">
 Associate Professor
 </div>
 
-
 <div class="subtitle">
 Shandong Normal University
 </div>
-
 
 <p>
 Nonlinear Systems · Multi-Agent Systems · Secure Control
 </p>
 
-
 </header>
 
 
+<!-- Navigation -->
 
 <nav>
 
-<a href="#about">
-About
-</a>
+<a href="#about">About</a>
 
-<a href="#research">
-Research
-</a>
+<a href="#research">Research</a>
 
-<a href="#publications">
-Publications
-</a>
+<a href="#publications">Publications</a>
 
-<a href="#projects">
-Projects
-</a>
+<a href="#projects">Projects</a>
 
-<a href="#awards">
-Awards
-</a>
+<a href="#awards">Awards</a>
 
-<a href="#contact">
-Contact
-</a>
-
+<a href="#contact">Contact</a>
 
 </nav>
 
 
+<!-- Main -->
 
 <div class="container">
 
 
+<!-- About -->
 
 <section id="about">
 
-
-<h2>
-About Me
-</h2>
-
+<h2>About Me</h2>
 
 <p>
-
-I am an Associate Professor at
-Shandong Normal University.
-
-My research focuses on nonlinear systems,
-multi-agent systems,
-cyber-physical systems,
-adaptive control and secure control.
-
+I am an Associate Professor at Shandong Normal University.
+My research focuses on nonlinear systems, multi-agent systems,
+cyber-physical systems, adaptive control and secure control.
 </p>
 
-
 <p>
-
 My research interests include nonlinear control,
-distributed coordination,
-consensus tracking,
+distributed coordination, consensus tracking,
 and resilient control against cyber attacks.
-
 </p>
-
 
 </section>
 
 
+<!-- Education -->
 
+<section id="education">
 
-
-<section>
-
-
-<h2>
-Education & Experience
-</h2>
-
+<h2>Education & Experience</h2>
 
 <p>
 
-<strong>
-2020.09 - Present
-</strong>
+<strong>2020.09 - Present</strong>
 
 <br>
 
@@ -342,28 +285,25 @@ Shandong Normal University, China.
 </p>
 
 
-
 <p>
 
-<strong>
-2022.09 - 2023.07
-</strong>
+<strong>2022.09 - 2023.07</strong>
 
 <br>
 
 Visiting Scholar,
-Chongqing University, China. Supervisor:
-Prof. Yongduan Song
+Chongqing University, China.
+
+<br>
+
+Supervisor: Prof. Yongduan Song
 
 </p>
 
 
-
 <p>
 
-<strong>
-2016.09 - 2020.07
-</strong>
+<strong>2016.09 - 2020.07</strong>
 
 <br>
 
@@ -372,688 +312,411 @@ Hohai University, China.
 
 </p>
 
-
 </section>
 
 
-
-
-
+<!-- Research Interests -->
 
 <section id="research">
 
-
-<h2>
-Research Interests
-</h2>
-
+<h2>Research Interests</h2>
 
 <ul>
 
-<li>
-Nonlinear Systems
-</li>
+<li>Nonlinear Systems</li>
 
-<li>
-Multi-Agent Systems
-</li>
+<li>Multi-Agent Systems</li>
 
-<li>
-Cyber Attack and Secure Control
-</li>
+<li>Cyber Attack and Secure Control</li>
 
-<li>
-Adaptive Control
-</li>
+<li>Adaptive Control</li>
 
-<li>
-Resilient Control of Cyber-Physical Systems
-</li>
-
+<li>Resilient Control of Cyber-Physical Systems</li>
 
 </ul>
 
-
 </section>
-<section id="publications">
-<section id="publications">
-
-<h2>
-Selected Publications
-</h2>
 
 
+<!-- Publications -->
+
 <section id="publications">
+
+<h2>Selected Publications</h2>
 
 
 <div class="publication">
 
 <p>
 <b>[1]</b>
-
 <b>Xinjun Wang</b>, Ben Niu, Zihao Shang, and Yi Niu,
-
 "Distributed resilient adaptive consensus tracking control of nonlinear multi-agent systems dealing with deception attacks via K-filters approach,"
-
 <i>Automatica</i>,
-
 vol. 169, 111871, 2024.
-
 </p>
 
 </div>
-
 
 
 <div class="publication">
 
 <p>
 <b>[2]</b>
-
 Zhihua Guo, <b>Xinjun Wang</b>*, Mingliang Tian, and Jianing Hu,
-
 "Zonotopic state estimation and fault detection for discrete-time linear systems under DoS attacks: A switching controller design mechanism,"
-
 <i>Automatica</i>,
-
 vol. 185, 112833, 2026.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[3]</b>
-
 Ye Cao, <b>Xinjun Wang</b>, Yajing Ma, Jianfu Cao, and Yongduan Song,
-
 "Performance-based fault-tolerant control uniformly accommodating multiple levels of actuation failures,"
-
 <i>IEEE Transactions on Automatic Control</i>,
-
 vol. 69, no. 11, pp. 8018-8025, 2024.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[4]</b>
-
 <b>Xinjun Wang</b>, Ye Cao, Ben Niu, and Yongduan Song,
-
 "A novel bipartite consensus tracking control for multiagent systems under sensor deception attacks,"
-
 <i>IEEE Transactions on Cybernetics</i>,
-
 vol. 53, no. 9, pp. 5984-5993, 2023.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[5]</b>
-
 <b>Xinjun Wang</b>, Shenghang Liu, Xin Wang, Ben Niu, Wenqi Zhou, and Xinmin Song,
-
 "Adaptive fuzzy tracking control for uncertain nonlinear systems with unknown control gain functions via intermittent output,"
-
 <i>IEEE Transactions on Systems, Man, and Cybernetics: Systems</i>,
-
 vol. 55, no. 8, pp. 5400-5409, 2025.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[6]</b>
-
 <b>Xinjun Wang</b>, Ye Cao, Ben Niu, Huanqing Wang, Guangdeng Zong, and Xudong Zhao,
-
 "Resilient adaptive stabilization for nonlinear CPSs dealing with deception attacks,"
-
 <i>IEEE Transactions on Control of Network Systems</i>,
-
 vol. 12, no. 1, pp. 135-143, 2025.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[7]</b>
-
 <b>Xinjun Wang</b>, Shenghang Liu, Ben Niu, Xinmin Song, Huanqing Wang, and Xudong Zhao,
-
 "A novel composite observer based approach for dynamic event-triggered adaptive fuzzy control of nonlinear systems under DoS attacks,"
-
 <i>IEEE Transactions on Fuzzy Systems</i>,
-
 vol. 33, no. 2, pp. 694-703, 2025.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[8]</b>
-
 <b>Xinjun Wang</b>, Ye Cao, Guangdeng Zong, Huanqing Wang, and Ben Niu,
-
 "Resilient adaptive intermittent control of nonlinear systems under deception attacks,"
-
 <i>IEEE Transactions on Systems, Man, and Cybernetics: Systems</i>,
-
 vol. 54, no. 4, pp. 2171-2180, 2024.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[9]</b>
-
 <b>Xinjun Wang</b>, Ben Niu, Yahui Gao, and Zihao Shang,
-
 "Adaptive finite time output feedback bipartite tracking control for nonlinear multiagent systems,"
-
 <i>IEEE Transactions on Automation Science and Engineering</i>,
-
 vol. 21, no. 4, pp. 6401-6410, 2024.
-
 </p>
 
 </div>
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[10]</b>
-
 <b>Xinjun Wang</b>, Xinyu Xu, Ben Niu, Xiaomei Wang, Xudong Zhao, and Huanqing Wang,
-
 "Composite observer based resilient adaptive fault-tolerant control for interconnected nonlinear systems under deception attacks,"
-
 <i>IEEE Transactions on Systems, Man and Cybernetics: Systems</i>,
-
 vol. 56, no. 7, pp. 4195-4204, 2026.
-
 </p>
 
 </div>
+
 
 <div class="publication">
 
 <p>
 <b>[11]</b>
-
 <b>Xinjun Wang</b>, Shenghang Liu, Xinyu Xu, Ben Niu, Huanqing Wang, and Xudong Zhao,
-
 "Intermittent adaptive resilient secure control for nonlinear CPSs under DoS attacks in sensor networks,"
-
-<i>
-IEEE Transactions on Green Communications and Networking
-</i>,
-
+<i>IEEE Transactions on Green Communications and Networking</i>,
 vol. 10, pp. 2066-2074, 2026.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[12]</b>
-
 <b>Xinjun Wang</b>, Ben Niu, Huanqing Wang, Xudong Zhao, and Wendi Chen,
-
 "Prescribed performance-based finite-time consensus technology of nonlinear multiagent systems and application to FDPs,"
-
-<i>
-IEEE Transactions on Circuits and Systems II: Express Briefs
-</i>,
-
+<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>,
 vol. 70, no. 2, pp. 591-595, 2023.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[13]</b>
-
 <b>Xinjun Wang</b>, Ben Niu, Lun Zhai, Jie Kong, and Xiaomei Wang,
-
 "A novel distributed bipartite consensus control of nonlinear multiagent systems via prioritized strategy approach,"
-
-<i>
-IEEE Transactions on Circuits and Systems II: Express Briefs
-</i>,
-
+<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>,
 vol. 69, no. 6, pp. 2852-2856, 2022.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[14]</b>
-
 Xinyu Xu, <b>Xinjun Wang</b>*, Yingying Liu, Liang Zhang, and Ben Niu,
-
 "Enhancing performance constraints of nonlinear networked systems under intermittent communications and DoS attacks,"
-
-<i>
-IEEE Transactions on Green Communications and Networking
-</i>,
-
+<i>IEEE Transactions on Green Communications and Networking</i>,
 vol. 10, pp. 3461-3472, 2026.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[15]</b>
-
 Shenghang Liu, <b>Xinjun Wang</b>*, Wendi Chen, Ben Niu, Xinmin Song, Huanqing Wang, and Xudong Zhao,
-
 "Adaptive control for uncertain nonlinear systems against DoS attacks using quantized output only and application to a single-link robot,"
-
-<i>
-IEEE Transactions on Automation Science and Engineering
-</i>,
-
+<i>IEEE Transactions on Automation Science and Engineering</i>,
 vol. 22, pp. 5262-5271, 2025.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[16]</b>
-
 Chaojiang Liang, Ben Niu, Zhihua Guo, <b>Xinjun Wang</b>*, Hao Liu, and Ding Wang,
-
 "Attack Detection and Reconstruction for CPSs Based on Unknown Input Observer and Reachability Analysis,"
-
-<i>
-IEEE Transactions on Systems, Man, and Cybernetics: Systems
-</i>,
-
+<i>IEEE Transactions on Systems, Man, and Cybernetics: Systems</i>,
 vol. 55, no. 12, pp. 9645-9654, 2025.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[17]</b>
-
 Shenghang Liu, <b>Xinjun Wang</b>*, Ben Niu, Xinmin Song, Huanqing Wang, and Xudong Zhao,
-
 "Adaptive resilient output feedback control against unknown deception attacks for nonlinear cyber-physical systems,"
-
-<i>
-IEEE Transactions on Circuits and Systems II: Express Briefs
-</i>,
-
+<i>IEEE Transactions on Circuits and Systems II: Express Briefs</i>,
 vol. 71, no. 8, pp. 3855-3859, 2024.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[18]</b>
-
 Ben Niu, Yulong Ji, Huanqing Wang, <b>Xinjun Wang</b>, and Xudong Zhao,
-
 "Practical prescribed-time fault-tolerant tracking control for uncertain nonlinear systems via an immediate actuator switching strategy,"
-
-<i>
-IEEE Transactions on Systems, Man, and Cybernetics: Systems
-</i>,
-
+<i>IEEE Transactions on Systems, Man, and Cybernetics: Systems</i>,
 vol. 55, no. 9, pp. 6025-6033, 2025.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[19]</b>
-
 Yonglin Yu, Xudong Zhao, Ben Niu, Ding Wang, Xing Wang, and <b>Xinjun Wang</b>,
-
 "Adaptive Output-Feedback Fault-Tolerant Control for Distributed Optimization of Nonlinear MASs Under Event-Triggered Communication,"
-
-<i>
-IEEE Transactions on Reliability
-</i>,
-
+<i>IEEE Transactions on Reliability</i>,
 vol. 75, pp. 2600-2613, 2026.
-
 </p>
 
 </div>
-
-
-
 
 
 <div class="publication">
 
 <p>
 <b>[20]</b>
-
 Yuqiang Jiang, Ben Niu, Tao Zhao, Xudong Zhao, <b>Xinjun Wang</b>, and Huanqing Wang,
-
 "Intelligent consensus asymptotic tracking control for nonlinear multiagent systems under denial-of-service attacks,"
-
-<i>
-IEEE Transactions on Automation Science and Engineering
-</i>,
-
+<i>IEEE Transactions on Automation Science and Engineering</i>,
 vol. 22, pp. 776-787, 2024.
-
 </p>
 
 </div>
 
 
-
 </section>
+
+
 <!-- Research Projects -->
 
 <section id="projects">
 
-<h2>
-Research Projects
-</h2>
-
-
+<h2>Research Projects</h2>
 
 <ul class="projects">
-    <li>
-        National Natural Science Foundation of China (No. 62303287), 2024.01-2026.12
-    </li>
 
-    <li>
-        Natural Science Foundation of Shandong Province (No. ZR2024QF017), 2025.01-2027.12
-    </li>
+<li>
+National Natural Science Foundation of China
+(No. 62303287), 2024.01-2026.12
+</li>
 
-    <li>
-        Youth Innovation Technology Project of Higher School in Shandong Province (No. 2025KJH087), 2026.01-2028.12
-    </li>
+<li>
+Natural Science Foundation of Shandong Province
+(No. ZR2024QF017), 2025.01-2027.12
+</li>
+
+<li>
+Youth Innovation Technology Project of Higher School in Shandong Province
+(No. 2025KJH087), 2026.01-2028.12
+</li>
+
 </ul>
 
-
-
 </section>
-
-
-
-
 
 
 <!-- Honors & Awards -->
 
 <section id="awards">
 
+<h2>Honors & Awards</h2>
 
-<h2>
-Honors & Awards
-</h2>
-
-
-
-<div class="award">
-
+<ul class="awards-list">
 
 <li>
-
 Best Youth Editorial Board Member Award, Intelligence & Control, Aug. 2026
 </li>
-</div>
 
-
-
-<div class="award">
-
-    
 <li>
-
 Youth Science and Technology Award,
 Shandong Association for Automation
 (Individual Recipient, 2026)
 </li>
-</div>
-
-
-
-<div class="award">
-
-
 
 <li>
-
 First Prize of Natural Science Award,
 Shandong Association for Automation
 (First Completion Person, 2025)
 </li>
-</div>
-
-
-
-
-<div class="award">
-
 
 <li>
-
 Shandong Provincial Postgraduate Innovation Achievement Award
 (Supervisor, 2023)
 </li>
-</div>
-
-
-
-
-<div class="award">
-
-
 
 <li>
-
 The 14th Lanqiao Cup National Software and Information Technology Professionals Competition
 (Supervisor, 2023)
 </li>
 
-
-
-</div>
-
-
-
-
-<div class="award">
-    
 <li>
-
 Excellent Doctoral Dissertation Award,
 Hohai University (2021)
 </li>
-</div>
-
-
-
-
-<div class="award">
 
 <li>
-
 Merit Student of Jiangsu Province (2020)
 </li>
-</div>
-
-
-
-
-<div class="award">
 
 <li>
-
-National Scholarship for Doctoral Students (2019, 2018, 2016)
+National Scholarship for Doctoral Students
+(2019, 2018, 2016)
 </li>
-</div>
-
-
-
-
-<div class="award">
 
 <li>
-
 Yan Kai Education Science and Technology Award (2019)
 </li>
-    
-</div>
 
-
+</ul>
 
 </section>
 
 
-
-
-
-
-
 <!-- Contact -->
-
 
 <section id="contact">
 
-
-<h2>
-Contact
-</h2>
-
+<h2>Contact</h2>
 
 <p>
 
-<strong>
-Email:
-</strong>
+<strong>Email:</strong>
 
-<a href="mailto:wangxinjun1991@163.com">
-
+<a href="mailto:wangxinjunsdnu@163.com">
 wangxinjunsdnu@163.com
-
 </a>
-
 
 </p>
 
 
-
 <p>
 
-<strong>
-Address:
-</strong>
+<strong>Address:</strong>
 
 <br>
 
-No.1, Daxue Road,
+No. 1, Daxue Road,
 University Science Park,
 
 <br>
@@ -1064,12 +727,9 @@ Jinan, China 250358
 </p>
 
 
-
 <p>
 
-<strong>
-Affiliation:
-</strong>
+<strong>Affiliation:</strong>
 
 <br>
 
@@ -1077,24 +737,19 @@ Shandong Normal University
 
 </p>
 
-
-
 </section>
-
-
 
 
 </div>
 
 
-
+<!-- Footer -->
 
 <footer>
 
 © 2026 Xinjun Wang | Academic Homepage
 
 </footer>
-
 
 
 </body>

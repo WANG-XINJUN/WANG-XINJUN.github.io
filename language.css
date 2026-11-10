@@ -12,3 +12,7 @@ nav .language-switch:hover,
 nav .language-switch:focus-visible {
     background: #eaf4fb;
 }
+
+html[lang="zh-CN"] body {
+    font-family: "Helvetica Neue", Arial, "KaiTi", "Kaiti SC", "STKaiti", "DFKai-SB", sans-serif;
+}

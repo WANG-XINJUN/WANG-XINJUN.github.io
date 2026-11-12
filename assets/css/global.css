@@ -188,8 +188,8 @@ div.lazy {
 }
 
 :root {
-    --site-paper: #f8f4eb;
-    --site-card: #fffdf8;
+    --site-paper: #fff;
+    --site-card: #fff;
     --site-navy: #134468;
     --site-rule: #d1dbe4;
     --site-red: #8b3235;
@@ -204,7 +204,7 @@ main .bg-white {
 }
 
 nav.navbar {
-    background-color: rgba(255, 253, 248, .96) !important;
+    background-color: #fff !important;
     border-bottom: 1px solid var(--site-rule);
 }
 

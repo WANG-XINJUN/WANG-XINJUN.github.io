@@ -191,6 +191,7 @@ div.lazy {
     --site-paper: #fff;
     --site-card: #fff;
     --site-navy: #134468;
+    --site-title: #0033cc;
     --site-rule: #d1dbe4;
     --site-red: #8b3235;
 }
@@ -214,7 +215,7 @@ main h2,
 main h6,
 main .col.h3,
 main .col.text-center.h4 {
-    color: var(--site-navy);
+    color: var(--site-title);
 }
 
 main a {

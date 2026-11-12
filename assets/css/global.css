@@ -5,6 +5,11 @@ body {
     padding-top: 5.0rem;
 }
 
+/* Apply a system Kai typeface to the Chinese edition only. */
+html[lang="zh-CN"] body {
+    font-family: "KaiTi", "STKaiti", "Kaiti SC", "BiauKai", serif;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;

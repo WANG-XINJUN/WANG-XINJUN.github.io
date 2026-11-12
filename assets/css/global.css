@@ -84,8 +84,6 @@ main [id] {
     display: block;
     border: 0;
     border-radius: 0 !important;
-    transform: scale(1.25);
-    transform-origin: center;
     image-rendering: auto;
 }
 

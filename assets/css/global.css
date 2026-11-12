@@ -88,8 +88,8 @@ main [id] {
 }
 
 /* Enlarge low-density figures without cutting off their visible content. */
-.d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/01.webp"]) img { transform: scale(1.55); }
-.d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/03.webp"]) img { transform: scale(1.65); }
+.d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/01.webp"]) img { transform: scale(1.30); }
+.d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/03.webp"]) img { transform: scale(1.38); }
 .d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/02.webp"]) img { transform: scale(1.15); }
 .d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/04.webp"]) img { transform: scale(1.60); }
 .d-none.d-md-block .row.no-gutters.border-gray figure:has(img[src*="/05.webp"]) img { transform: scale(1.20); }

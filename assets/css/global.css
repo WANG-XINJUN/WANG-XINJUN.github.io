@@ -218,6 +218,11 @@ main .col.text-center.h4 {
     color: var(--site-title);
 }
 
+.navbar-light .navbar-brand,
+main .profile-name {
+    color: #111 !important;
+}
+
 main a {
     color: var(--site-navy);
 }

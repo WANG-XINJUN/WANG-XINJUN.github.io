@@ -72,6 +72,26 @@ main [id] {
     max-height: 120px;
 }
 
+/* Make publication figures easier to inspect on desktop screens. */
+.d-none.d-md-block .row.no-gutters.border-gray figure img {
+    border: 2px solid #111;
+    border-radius: 0.2rem !important;
+    background: #fff;
+    image-rendering: auto;
+}
+
+@media (min-width: 1200px) {
+    .d-none.d-md-block .row.no-gutters.border-gray > .col-xl-3 {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .d-none.d-md-block .row.no-gutters.border-gray > .col-xl-9 {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
 .abstract-body {
     min-height: 100px;
 }
